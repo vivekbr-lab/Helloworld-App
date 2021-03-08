@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="d47327c9-70c8-4636-8640-f01a092544c3" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="hello-world-vivekFlow" doc:id="86921bce-63e0-4ca9-9b23-52e9fcf2fd55" >
+		<http:listener doc:name="Listener" doc:id="b36d8401-c0c1-4c79-8c63-b60be117339b" config-ref="HTTP_Listener_config" path="/test"/>
+		<set-payload value="Success" doc:name="Set Payload" doc:id="922e512b-a2b6-4247-938a-e1fa846cb59a" />
+	</flow>
+</mule>
