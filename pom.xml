@@ -31,6 +31,17 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+				<CloudHubDeployment>
+				<uri>https://anypoint.mulesoft.com</uri>
+				<username>vivekbr_feb_2021</username>
+				<password>Aa1!sastra</password>
+				<environment>Sandbox</environment>
+				<workers>1</workers>
+				<workerType>Micro</workerType>
+				<applicationName>hello-world-vivek</applicationName>
+				<businessGroup>Mulesoft</businessGroup>
+				<muleVersion>4.3.0</muleVersion>
+				</CloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
