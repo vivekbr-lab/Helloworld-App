@@ -10,9 +10,9 @@ pipeline {
 		
 		stage('Deploy application to cloudhub') {
 			steps {
-				bat 'mvn -e clean package deploy -DmuleDeploy -Dclient_id=8122366d14834cf6ab00f8bedee90187 -Dclient_secret=284CA3884aE34e4585110e3c8D2041e6'
+				bat 'mvn -e clean package deploy -Dclient_id=8122366d14834cf6ab00f8bedee90187 -Dclient_secret=284CA3884aE34e4585110e3c8D2041e6'
 			}
 		}
 	}
 	
-}
+	}
